@@ -14,7 +14,8 @@
   <main class="container">
     <h1>Cargar archivo Excel</h1>
     <input type="file" id="fileInput" accept=".xlsx, .xls, .csv">
-    <button id="resaltarBtn">Resaltar folios</button>
+    <p id="error-message" class="error"></p>
+    <button id="resaltarBtn">Resaltar Cuentas</button>
     <div id="navegacion" class="hidden">
       <button id="anteriorBtn">Anterior</button>
       <button id="siguienteBtn">Siguiente</button>
@@ -22,6 +23,7 @@
   </main>
   
   <script src="xlsx.full.min.js"></script>
+  <script src="validator.js"></script>
   <script src="popup.js"></script>
 </body>
 </html>
