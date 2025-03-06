@@ -6,7 +6,6 @@ let indiceActual = -1
 // Función para resaltar los folios en el documento
 function resaltarFolios(folios) {
   try {
-
     // Iterar sobre los folios proporcionados
     folios.forEach((folio, index) => {
       // Crear una expresión regular para encontrar todas las ocurrencias del folio
@@ -18,10 +17,8 @@ function resaltarFolios(folios) {
         `<span class='resaltado' data-folio='${folio}'>$1</span>`
       )
     })
-
     // Almacenar todos los elementos resaltados en el array
     foliosResaltados = Array.from(document.querySelectorAll(".resaltado"))
-
     // Retornar un objeto con un estado de éxito
     return { success: true }
   } catch (error) {
