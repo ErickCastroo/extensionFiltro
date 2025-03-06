@@ -1,17 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cargar Excel</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Cargar archivo Excel</h1>
-  <input type="file" id="fileInput" accept=".xlsx, .xls, .csv">
-  <button id="resaltarBtn">Resaltar folios</button>
-  <div id="navegacion" style="display: none;">
-    <button id="anteriorBtn">Anterior</button>
-    <button id="siguienteBtn">Siguiente</button>
-  </div>
+  <header class="header">
+    <img src="images/logooomapasgris.png" alt="Logo" class="logo">
+  </header>
+  
+  <main class="container">
+    <h1>Cargar archivo Excel</h1>
+    <input type="file" id="fileInput" accept=".xlsx, .xls, .csv">
+    <button id="resaltarBtn">Resaltar folios</button>
+    <div id="navegacion" class="hidden">
+      <button id="anteriorBtn">Anterior</button>
+      <button id="siguienteBtn">Siguiente</button>
+    </div>
+  </main>
+  
   <script src="xlsx.full.min.js"></script>
   <script src="popup.js"></script>
 </body>

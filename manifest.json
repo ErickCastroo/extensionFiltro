@@ -5,7 +5,12 @@
   "description": "Carga un archivo Excel con folios y los resalta en la página.",
   "permissions": ["activeTab", "scripting"],
   "action": {
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/logooomapasgris.png",
+      "48": "images/logooomapasgris.png",
+      "128": "images/logooomapasgris.png"
+    }
   },
   "content_scripts": [
     {
