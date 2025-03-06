@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Buscador de Folios desde Excel",
+  "version": "1.0",
+  "description": "Carga un archivo Excel con folios y los resalta en la página.",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
